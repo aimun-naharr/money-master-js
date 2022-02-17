@@ -42,7 +42,7 @@ else {
 foodInput.value = ''
 rentInput.value = ''
 clothesInput.value = ''
-incomeInput.value = ''
+
 }
 
 // save button handler added-------------------------------------------------------
