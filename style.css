@@ -1,15 +1,11 @@
+/* page title style added---------------------------------- */
 .page-title{
-    display: block;
-    text-align: center;
+    color: #D83A56;
+    font-weight: 500;
 }
-.money-image{
-    height: 700;
-}
-h4{
-    font-size: 20px;
-   
-    
-}
+
+
+/* ============Input style added=============== */
 input{
     background-color: #DCDCDC;
     border: none;

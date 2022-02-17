@@ -11,7 +11,7 @@
 <body>
     <!------------------------------------------- page title added --------------------->
    <header>
-    <h1 class="page-title">Cash Management</h1>
+    <h1 class="page-title d-block text-center">Cash Management</h1>
    </header>
    <main>
        <div class="container mt-5">
@@ -25,7 +25,7 @@
                    <h4 class="fs-5 text-success fw-bold">Income</h4>
                    Income 
                    <input class="ms-2 mb-1" name="" id="income-input" width=40 ></input><br>
-                   <h4 id="income-error" class="error-warning fs-6">You do not have enough balance</h4>
+                   
                 <h4 class="fs-5 text-success fw-bold">Expenses</h4>
                 Food
                    <input class="ms-3 mb-2" name="" id="food-input" cols="40" rows="1"></input><br>
@@ -34,6 +34,7 @@
                    <input class="mb-2" name="" id="clothes-input" cols="40" rows="1"></input><br>
                    <button id="calculate-btn" class="m-2 px-4 btn btn-success">Calculate</button>
                    <h4 id="balance-error" class="error-warning fs-6">Please enter a valid input</h4>
+                   <h4 id="income-error" class="error-warning fs-6">You do not have enough balance</h4>
                    <h4 class="fs-6 fw-bold">Total Expenses: <span  id="total-cost">0</span></h4>
                    <h4 class="fs-6 fw-bold">Balance: <span id="balance-amount">0</span></h4>
                    Save <input id="save-input" type="text"> % <button id="save-btn" class="m-2 px-4 btn btn-success">save</button>
