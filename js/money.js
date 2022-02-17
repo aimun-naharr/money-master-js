@@ -35,6 +35,10 @@ else {
     balanceAmount.innerText = totalBalance
     totalExpenseAmount.innerText = parseFloat(totalExpense).toFixed(2)
 }
+foodInput.value = ''
+rentInput.value = ''
+clothesInput.value = ''
+incomeInput.value = ''
 })
 
 // save button handler added-------------------------------------------------------
