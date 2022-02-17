@@ -1,6 +1,10 @@
 // calculate button handler added---------------------------------------------------
 document.getElementById('calculate-btn').addEventListener('click', function(){
-const foodInput = document.getElementById('food-input')
+balanceUpdate()
+})
+
+function balanceUpdate(){
+    const foodInput = document.getElementById('food-input')
 const foodAmount = parseFloat(foodInput.value)
 const rentInput = document.getElementById('rent-input')
 const rentAmount = parseFloat(rentInput.value)
@@ -39,10 +43,15 @@ foodInput.value = ''
 rentInput.value = ''
 clothesInput.value = ''
 incomeInput.value = ''
-})
+}
 
 // save button handler added-------------------------------------------------------
 document.getElementById('save-btn').addEventListener('click', function(){
+    savingsUpdate()
+   
+})
+
+function savingsUpdate(){
     const saveInput = document.getElementById('save-input')
     const saveAmount = parseInt(saveInput.value) / 100
     const incomeInput = document.getElementById('income-input') 
@@ -69,5 +78,4 @@ document.getElementById('save-btn').addEventListener('click', function(){
    else if(saveInput.value<0){
        remainInput.innerText = balanceAmount
    }
-   
-})
+}
