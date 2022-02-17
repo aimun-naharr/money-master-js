@@ -1,0 +1,19 @@
+.page-title{
+    display: block;
+    text-align: center;
+}
+.money-image{
+    height: 700;
+}
+h4{
+    font-size: 20px;
+   
+    
+}
+input{
+    background-color: #DCDCDC;
+    border: none;
+}
+error-warning{
+    color: #f02849;
+}
