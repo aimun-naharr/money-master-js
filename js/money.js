@@ -23,8 +23,32 @@ else if(isNaN(foodInput.value) || isNaN(rentInput.value) || isNaN(clothesInput.v
 else if(incomeAmount<totalExpense){
    document.getElementById('income-error').style.display = 'block'
 }
+else if(incomeAmount>totalExpense){
+   document.getElementById('income-error').style.display = 'none'
+   balanceAmount.innerText = totalBalance
+   totalExpenseAmount.innerText = parseFloat(totalExpense).toFixed(2)
+}
 else {
     balanceAmount.innerText = totalBalance
     totalExpenseAmount.innerText = parseFloat(totalExpense).toFixed(2)
 }
+})
+
+document.getElementById('save-btn').addEventListener('click', function(){
+    const saveInput = document.getElementById('save-input')
+    const saveAmount = parseInt(saveInput.value) / 100
+    const incomeInput = document.getElementById('income-input') 
+    const incomeAmount = parseInt(incomeInput.value)
+    const savingAmount = incomeAmount * saveAmount
+    const saveTotal = document.getElementById('save-total')
+    
+    const balanceInput = document.getElementById('balance-amount')
+    const balanceAmount = parseFloat(balanceInput.innerText)
+    if(savingAmount> balanceAmount){
+        document.getElementById('saving-error').style.display = 'block'
+    }
+    else if(savingAmount>0){
+        saveTotal.innerText = parseFloat(savingAmount).toFixed(2)
+    }
+   
 })
