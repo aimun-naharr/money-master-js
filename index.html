@@ -21,19 +21,19 @@
                <div class="col-md-6 align-items-end">
                    <h4 class="fs-5">Income</h4>
                    Income 
-                   <input class="m-1" name="" id="" width=40 ></input><br>
+                   <input class="m-1" name="" id="income-input" width=40 ></input><br>
                 <h4 class="fs-5">Expenses</h4>
                 Food
-                   <input class="m-1" name="" id="" cols="40" rows="1"></input><br>
+                   <input class="m-1" name="" id="food-input" cols="40" rows="1"></input><br>
                    Rent
-                   <input class="m-1" name="" id="" cols="40" rows="1"></input><br>
+                   <input class="m-1" name="" id="rent-input" cols="40" rows="1"></input><br>
                    Clothes
-                   <input class="m-1" name="" id="" cols="40" rows="1"></input><br>
+                   <input class="m-1" name="" id="clothes-input" cols="40" rows="1"></input><br>
                    <button id="calculate-btn" class="m-2 px-4 btn btn-success">Calculate</button>
                    <h4 class="error-warning fs-6">Please enter a valid input</h4>
-                   <h4 class="fs-5">Total Expenses: 5500</h4>
-                   <h4 class="fs-5">Balance: 4500</h4>
-                   Save <input type="text">% <button class="m-2 px-4 btn btn-success">save</button>
+                   <h4 class="fs-5">Total Expenses: <span id="total-cost">5500</span></h4>
+                   <h4 class="fs-5">Balance: <span id="balance-amount">4500</span></h4>
+                   Save <input type="text"> % <button class="m-2 px-4 btn btn-success">save</button>
                    <h4 class="error-warning fs-6">Please enter a valid input</h4>
                    <h4 class="fs-5">Saving Amount: 2000</h4>
                    <h4 class="fs-5">Remaining Balance: 2000</h44 btn btn-success
@@ -42,6 +42,6 @@
            </div>
        </div>
    </main>
-    
+    <script src="js/money.js"></script>
 </body>
 </html>
