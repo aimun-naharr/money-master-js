@@ -50,5 +50,14 @@ document.getElementById('save-btn').addEventListener('click', function(){
     else if(savingAmount>0){
         saveTotal.innerText = parseFloat(savingAmount).toFixed(2)
     }
+    const remainInput = document.getElementById('remain-input')
+    const remainingAmount = parseFloat(remainInput.innerText)
+   const totalRemaining = balanceAmount - savingAmount
+   if(totalRemaining> 0){
+    remainInput.innerText = totalRemaining
+   }
+   else{
+       remainInput.innerText = balanceAmount
+   }
    
 })
